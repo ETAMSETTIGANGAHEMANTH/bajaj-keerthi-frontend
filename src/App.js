@@ -38,7 +38,7 @@ function App() {
         }
 
         try {
-            const response = await axios.post('http://localhost:3000/bfhl', JSON.parse(inputData));
+            const response = await axios.post('https://bajaj-keerthi-backend-8135293901c6.herokuapp.com/bfhl', JSON.parse(inputData));
             setResponseData(response.data);
             setError('');
         } catch (error) {
